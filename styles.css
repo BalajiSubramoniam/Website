@@ -1,0 +1,108 @@
+:root {
+  --bg: #ece0d1;
+  --fg: #634832;
+  --icon: #38220f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Fira Sans Condensed", system-ui, -apple-system, sans-serif;
+  font-weight: 300;
+  background-color: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+/* Centered main block */
+.container {
+  width: 60%;
+  margin: 4rem auto;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
+}
+
+/* Header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-size: calc(1rem + 8pt);
+  font-weight: 400;
+}
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  color: var(--icon);
+}
+
+/* Headings */
+h2 {
+  font-size: calc(1rem + 2pt);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: var(--fg);
+}
+
+/* Scroll buttons */
+.scroll-btn {
+  position: fixed;
+  background: none;
+  border: none;
+  color: var(--fg);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-btn.top {
+  top: 1rem;
+  left: 1rem;
+}
+
+.scroll-btn.bottom {
+  bottom: 1rem;
+  right: 1rem;
+}
+
+a:link {
+  color: #634832;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: #634832;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: #634832;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: #634832;
+  background-color: transparent;
+  text-decoration: underline;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Balaji Subramoniam</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Scroll buttons -->
+  <button id="scrollTop" class="scroll-btn top" aria-label="Scroll to top">▲</button>
+  <button id="scrollBottom" class="scroll-btn bottom" aria-label="Scroll to bottom">▼</button>
+
+  <main class="container">
+
+    <!-- Section 1 -->
+    <section class="header">
+      <div class="name">Balaji Subramoniam</div>
+      <div class="icons">
+        <!-- Gmail icon -->
+        <a href="mailto:rs_math2403@isibang.ac.in" aria-label="Email">
+          <svg viewBox="0 0 24 24" class="icon">
+            <path d="M2 4h20v16H2z" fill="none"/>
+            <path d="M2 6l10 7 10-7" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M2 6v12M22 6v12" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </a>
+
+        <!-- GitHub icon -->
+        <a href="https://github.com/BalajiSubramoniam" target="_blank" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" class="icon">
+            <path d="M12 2C6.5 2 2 6.6 2 12.3c0 4.6 2.9 8.5 6.9 9.9.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.4-3.4-1.4-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .8.1-.7.4-1.1.7-1.3-2.2-.3-4.5-1.2-4.5-5.1 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9 9 0 0 1 4.9 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.3 4.8-4.5 5.1.4.4.8 1 .8 2.1v3.1c0 .3.2.6.7.5 4-1.4 6.9-5.3 6.9-9.9C22 6.6 17.5 2 12 2z"
+                  fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="content">
+      <p>
+         Hi! I am a Junior Research Fellow at the Statistics and Mathematics Unit of the Indian Statistical Institute (Bangalore Center). I am currently working on topics in duality theory in algebraic geometry. I also retain some interest in abstract homotopy theory and commutative algebra.
+      </p>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="content">
+      <h2>Teaching Duties</h2>
+      <p>
+      This semester, I am TAing <a href="https://www.isibang.ac.in/~adean/infsys/database/Bmath/Top.html">Topology</a> for B.Math second-years. If you are taking the course and want to discuss something, you are more than welcome to write to me / drop by my office / bug me if you see me around.
+      </p>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="content">
+      <h2>Writing</h2>
+      <p>
+      <ul>
+	      <li> I wrote a Master's dissertation on the homotopy theory of locally truncated infinity categories, under the supervision of Prof. Neil Strickland and Prof. Sukhendu Mehrotra at CMI. The main results appearing here are all well-known and written down in literature but a couple of proofs (although clumsy and ad hoc) are new, including one for the question asked <a href="https://mathoverflow.net/questions/461820/comparing-notions-related-to-infty-2-categories">here</a>. I would be willing to share a copy of the draft upon request.
+</ul>
+      </p>
+    </section>
+ <section class="content">
+      <h2>Contact</h2>
+      <p>
+      Office: S-21 <br>
+      Email: rs_math2403@isibang.ac.in
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const topBtn = document.getElementById("scrollTop");
+    const bottomBtn = document.getElementById("scrollBottom");
+
+    function updateButtons() {
+      const scrollable = document.documentElement.scrollHeight > window.innerHeight;
+      topBtn.style.display = scrollable ? "block" : "none";
+      bottomBtn.style.display = scrollable ? "block" : "none";
+    }
+
+    topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    bottomBtn.onclick = () => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+
+    window.addEventListener("resize", updateButtons);
+    window.addEventListener("load", updateButtons);
+  </script>
+
+</body>
+</html>
+
